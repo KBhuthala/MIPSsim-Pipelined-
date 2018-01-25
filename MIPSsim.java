@@ -135,13 +135,7 @@ class PreIssueBuf extends MIPSsim {
 	private int count;
 	//private int index;
 	//private disassembledIns in;
-	public PreIssueBuf() {
-		queue[0] = null;
-		queue[1] = null;
-		queue[2] = null;
-		queue[3] = null;
-		count = 0;
-	}
+	
 	public PreIssueBuf(PreIssueBuf another) {
 	    this.queue[0] = another.queue[0]; 
 	    this.queue[1] = another.queue[1]; 
@@ -1049,14 +1043,6 @@ public class MIPSsim {
 		executedIns= null;
 	}
 	
-	public static String signExtend(String str){
-        int n=32-str.length();
-        char[] sign_ext = new char[n];
-        Arrays.fill(sign_ext, str.charAt(0));
-
-        return new String(sign_ext)+str;
-    }
-	
 	public static void main(String[] args) throws IOException {
 		//Mapper mapper = new DozerBeanMapper();
 		File inputFile=null;
@@ -1094,30 +1080,20 @@ public class MIPSsim {
 		         // if any error occurs
 		         e.printStackTrace();
 		      }
-		for(c=1; c<100;c++){	
+		f
 			//simulate.println("In loop "+i);
 			//simulate.println(" Near loop "+ preIssueBuf.getCount());
 			preIssueBufCurr = new PreIssueBuf(preIssueBuf);
 			preALU1qCurr= new PreALU(preALU1q);
 			preALU2qCurr = new PreALU(preALU2q);
-			if(preMEMq== null){
-				preMEMqCurr = null;
-			}
-			else{
+			
+	
 				preMEMqCurr = new disassembledIns(preMEMq);
-			}
-			if(postALUBuf == null){
-				postALUBufCurr = null;
-			}
-			else{
+			
 				postALUBufCurr = new disassembledIns(postALUBuf);	
-			}
-			if(postMEMBuf== null){
-				postMEMBufCurr= null;
-			}
-			else{
+			
 				postMEMBufCurr= new disassembledIns(postMEMBuf);
-			}	
+				
 			insFetchDecode(c);
 			issueInst();
 			alu1Unit();
@@ -1125,7 +1101,7 @@ public class MIPSsim {
 			memoryUnitExec();
 			wbUnitExec();
 			printOut(c);
-		}
+		
         
 	}
 	
