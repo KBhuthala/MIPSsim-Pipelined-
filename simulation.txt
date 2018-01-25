@@ -1,0 +1,389 @@
+--------------------
+Cycle:1
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [LW R3, 308(R0)]
+	Entry 1: [LW R4, 312(R0)]
+	Entry 2:
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0:
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	0	0	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:2
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [LW R4, 312(R0)]
+	Entry 1: [AND R5, R3, R4]
+	Entry 2: [NOR R6, R3, R4]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0: [LW R3, 308(R0)]
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0:
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	0	0	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:3
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [AND R5, R3, R4]
+	Entry 1: [NOR R6, R3, R4]
+	Entry 2: [ANDI R7, R3, #25]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0: [LW R4, 312(R0)]
+	Entry 1:
+Pre-MEM Queue: [LW R3, 308(R0)]
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0:
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	0	0	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:4
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [AND R5, R3, R4]
+	Entry 1: [NOR R6, R3, R4]
+	Entry 2: [ANDI R7, R3, #25]
+	Entry 3: [ORI R8, R4, #42]
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue: [LW R4, 312(R0)]
+Post-MEM Queue: [LW R3, 308(R0)]
+Pre-ALU2 Queue:
+	Entry 0:
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	0	0	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:5
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [AND R5, R3, R4]
+	Entry 1: [NOR R6, R3, R4]
+	Entry 2: [ANDI R7, R3, #25]
+	Entry 3: [ORI R8, R4, #42]
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue: [LW R4, 312(R0)]
+Pre-ALU2 Queue:
+	Entry 0:
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	44	0	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:6
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [AND R5, R3, R4]
+	Entry 1: [NOR R6, R3, R4]
+	Entry 2: [ORI R8, R4, #42]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [ANDI R7, R3, #25]
+	Entry 1:
+Post-ALU2 Queue:
+
+Registers
+R00:	0	0	0	44	81	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:7
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [NOR R6, R3, R4]
+	Entry 1: [ORI R8, R4, #42]
+	Entry 2: [SLT R9, R7, R8]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [AND R5, R3, R4]
+	Entry 1:
+Post-ALU2 Queue: [ANDI R7, R3, #25]
+
+Registers
+R00:	0	0	0	44	81	0	0	0
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:8
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [ORI R8, R4, #42]
+	Entry 1: [SLT R9, R7, R8]
+	Entry 2: [OR R10, R3, R4]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [NOR R6, R3, R4]
+	Entry 1:
+Post-ALU2 Queue: [AND R5, R3, R4]
+
+Registers
+R00:	0	0	0	44	81	0	0	8
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:9
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [SLT R9, R7, R8]
+	Entry 1: [OR R10, R3, R4]
+	Entry 2: [XOR R11, R3, R7]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [ORI R8, R4, #42]
+	Entry 1:
+Post-ALU2 Queue: [NOR R6, R3, R4]
+
+Registers
+R00:	0	0	0	44	81	0	0	8
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:10
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [SLT R9, R7, R8]
+	Entry 1: [XOR R11, R3, R7]
+	Entry 2: [XORI R12, R7, #7]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [OR R10, R3, R4]
+	Entry 1:
+Post-ALU2 Queue: [ORI R8, R4, #42]
+
+Registers
+R00:	0	0	0	44	81	0	-126	8
+R08:	0	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:11
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [SLT R9, R7, R8]
+	Entry 1: [XORI R12, R7, #7]
+	Entry 2: [SRL R13, R7, #3]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [XOR R11, R3, R7]
+	Entry 1:
+Post-ALU2 Queue: [OR R10, R3, R4]
+
+Registers
+R00:	0	0	0	44	81	0	-126	8
+R08:	123	0	0	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:12
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction:
+Pre-Issue Queue:
+	Entry 0: [XORI R12, R7, #7]
+	Entry 1: [SRL R13, R7, #3]
+	Entry 2: [SRA R14, R6, #3]
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [SLT R9, R7, R8]
+	Entry 1:
+Post-ALU2 Queue: [XOR R11, R3, R7]
+
+Registers
+R00:	0	0	0	44	81	0	-126	8
+R08:	123	0	125	0	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
+
+--------------------
+Cycle:13
+
+IF Unit:
+	Waiting Instruction:
+	Executed Instruction: [BREAK]
+Pre-Issue Queue:
+	Entry 0: [SRL R13, R7, #3]
+	Entry 1: [SRA R14, R6, #3]
+	Entry 2:
+	Entry 3:
+Pre-ALU1 Queue:
+	Entry 0:
+	Entry 1:
+Pre-MEM Queue:
+Post-MEM Queue:
+Pre-ALU2 Queue:
+	Entry 0: [XORI R12, R7, #7]
+	Entry 1:
+Post-ALU2 Queue: [SLT R9, R7, R8]
+
+Registers
+R00:	0	0	0	44	81	0	-126	8
+R08:	123	0	125	36	0	0	0	0
+R16:	0	0	0	0	0	0	0	0
+R24:	0	0	0	0	0	0	0	0
+
+Data
+308:	44	81	0	0	0	0	0	0
